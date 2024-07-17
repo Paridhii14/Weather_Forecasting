@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #1e1e1e;
+  color: #171717;
+  /* overflow: hidden; */
+  height: 100vh;
+  /* width: 100vh; */
+}
+.container {
+  background-color: #fff;
+  color: #171717;
+  width: 40%;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 4rem auto;
+}
+.searchHeader {
+  color: black;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.searchBox {
+  position: relative;
+}
+.searchBox i {
+  position: absolute; /* will bring search icon inside search box*/
+  left: 10px;
+  top: 10px;
+  font-size: 15px;
+  color: #fff;
+}
+input {
+  border: none;
+  color: #fff;
+  background: #1e1e1e;
+  outline: none;
+  padding: 0.5rem 2.5rem;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+input::placeholder {
+  color: #f7f7f7;
+}
+
+.weather_cond {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 48px;
+  padding: 46px;
+}
+
+.weather_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adds space between the icon and the text */
+  margin-bottom: 10px;
+}
+.weather_card i {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.weather_card p {
+  margin: 0;
+  font-size: 18px;
+  color: #666;
+}
+
+.weather_icon img {
+  width: 100px;
+  filter: drop-shadow(2px 4px 6px black);
+  -webkit-filter: drop-shadow(2px 4px 6px black);
+}
+
+.weather_degree {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+.weather_datetime {
+  margin-bottom: 2rem;
+  font-size: 14px;
+}
+
+.weather_content {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.weather_forecast {
+  background: #1e1e1e;
+  color: #fff;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+}
+
+.weather_temp {
+  font-size: 1.75rem;
+}
+
+.weather_minmax {
+  display: flex;
+  justify-content: center;
+}
+
+.weather_minmax p {
+  font-size: 14px;
+  margin: 0.5rem;
+}
