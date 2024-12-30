@@ -38,7 +38,7 @@ const getCountryName = (code) => {
   // return new Intl.DisplayNames([code], { type: "region" }).of(code);
 };
 
-let city = "jamshedpur";
+let city = "kolkata";
 
 citySearch.addEventListener("submit" ,(e) => {
   e.preventDefault();
